@@ -4,7 +4,7 @@ function add(x,y){
 }
 
 // descomente a linha seguinte para testar sua função
-//console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
+console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
 // comece a criar a sua função multiply na linha abaixo
@@ -17,7 +17,7 @@ function multiply(x,y){
 }
 
 // descomente a linha seguinte para testar sua função
-//console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
+console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
 
 
 // comece a criar a sua função power na linha abaixo
@@ -30,7 +30,7 @@ function power(x,n){
 }
 
 // descomente a linha seguinte para testar sua função
-//console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
+console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
 
 
 // comece a criar a sua função factorial na linha abaixo
@@ -44,7 +44,7 @@ function factorial(x){
 }
 
 // descomente a linha seguinte para testar sua função
-//console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
+console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
 
 
 /**
@@ -56,29 +56,24 @@ function fibonacci(num){
     let resultado = 0
     let fibo_1 = 0
     let fibo_2 = 1
-    console.log(fibo_1,fibo_1,resultado)
     if(num == 0){
         return 0
     }else if(num == 1){
         return 1
     }
-    console.log(fibo_1,fibo_1,resultado)
     for(let i = 1 ; i < num; i++){
         if(fibo_1 > fibo_2){
             fibo_2 = add(resultado,fibo_1)
-            console.log(fibo_1,fibo_2,resultado)
             if(i == num-1){
                 return fibo_2
             }
         }else if(fibo_2 > fibo_1 && fibo_2 > resultado){
             resultado = add(fibo_1,fibo_2)
-            console.log(fibo_1,fibo_2,resultado)
             if(i == num-1){
                 return resultado
             }
         }else if(resultado > fibo_1){
             fibo_1 = add(fibo_2,resultado)
-            console.log(fibo_1,fibo_2,resultado)
             if(i == num-1){
                 return fibo_1
             }
@@ -88,5 +83,5 @@ function fibonacci(num){
 }
 
 // descomente a linha seguinte para testar sua função
-//console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
-console.log(fibonacci(3))
+console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
+console.log(fibonacci(7))
