@@ -37,7 +37,6 @@ console.assert(power(3, 4) === 81, 'A função power não está funcionando como
 function factorial(x){
     let resultado = x
     for(let i = 1; i < x ; i++){
-
         resultado = multiply(resultado, i)
     }
     return resultado
@@ -83,6 +82,5 @@ function fibonacci(num){
 }
 
 // descomente a linha seguinte para testar sua função
-//console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
-console.log(fibonacci(6))
-console.log(power(5,5))
+console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
+console.log(fibonacci(5))
